@@ -14,4 +14,9 @@
     - [第 1 章习题](ch01/README.md#第-1-章习题)
 - [第 2 章](ch02/README.md)
     - [第 2 章习题](ch02/README.md#第-2-章习题)
+- [第 3 章](ch03/README.md)
+    - [检测点 3.1](ch03/README.md#检测点-31)
+    - [检测点 3.2](ch03/README.md#检测点-32)
+    - [检测点 3.3](ch03/README.md#检测点-33)
+    - [第 3 章习题](ch03/README.md#第-3-章习题)
 
