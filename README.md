@@ -20,3 +20,7 @@
     - [检测点 3.3](ch03/README.md#检测点-33)
     - [第 3 章习题](ch03/README.md#第-3-章习题)
 
+## Licence
+
+[MIT](https://github.com/CuB3y0nd/assembly.rip/blob/master/LICENSE) © [CuB3y0nd](https://www.cubeyond.net)
+
