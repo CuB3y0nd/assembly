@@ -19,6 +19,9 @@
     - [检测点 3.2](ch03/README.md#检测点-32)
     - [检测点 3.3](ch03/README.md#检测点-33)
     - [第 3 章习题](ch03/README.md#第-3-章习题)
+- [第 4 章](ch04/README.md)
+    - [检测点 4.1](ch04/README.md#检测点-41)
+    - [第 4 章习题](ch04/README.md#第-4-章习题)
 
 ## License
 
