@@ -26,6 +26,10 @@
     - [检测点 5.1](ch05/README.md#检测点-51)
     - [检测点 5.2](ch05/README.md#检测点-52)
 
+## pwndbg cheat sheet
+
+这份 Cheet Sheet 记录了一些常用的 pwndbg 调试指令，方便查阅：[pwndbg cheat sheet](misc/pwndbg-cheat-sheet.md)。
+
 ## 使用 Qemu + GDB 调试汇编程序
 
 使用以下指令即可启动虚拟机：
