@@ -22,6 +22,9 @@
 - [第 4 章](ch04/README.md)
     - [检测点 4.1](ch04/README.md#检测点-41)
     - [第 4 章习题](ch04/README.md#第-4-章习题)
+- [第 5 章](ch05/README.md)
+    - [检测点 5.1](ch05/README.md#检测点-51)
+    - [检测点 5.2](ch05/README.md#检测点-52)
 
 ## License
 
