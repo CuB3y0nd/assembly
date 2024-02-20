@@ -22,5 +22,5 @@
 
 ## Licence
 
-[MIT](https://github.com/CuB3y0nd/assembly.rip/blob/master/LICENSE) © [CuB3y0nd](https://www.cubeyond.net)
+[assembly.rip](https://github.com/CuB3y0nd/assembly.rip) © 2024 by [CuB3y0nd](https://www.cubeyond.net) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
 
