@@ -26,6 +26,25 @@
     - [检测点 5.1](ch05/README.md#检测点-51)
     - [检测点 5.2](ch05/README.md#检测点-52)
 
+## 使用 Qemu + GDB 调试汇编程序
+
+使用以下指令即可启动虚拟机：
+
+```shell
+qemu-system-i386 -s -S -drive format=raw,file=<binary_file> --nographic
+```
+
+ - ***<binary_file> 替换为你编译出来的二进制文件名***
+
+运行虚拟机后在新的终端打开 `gdb`，输入以下指令即可连接虚拟机远程调试：
+
+```bash
+set architecture i8086
+target remote localhost:1234
+```
+
+使用 `layout asm` 可以查看接下来要运行的指令，十分方便。若要切换它的显示状态可以使用 `Ctrl + X + A`。
+
 ## License
 
 [assembly.rip](https://github.com/CuB3y0nd/assembly.rip) © 2024 by [CuB3y0nd](https://www.cubeyond.net) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
