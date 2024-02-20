@@ -35,7 +35,7 @@ db 0x55, 0xaa
 
  - 输出「asm」
 
-**如果上面的代码编译时出现 `error: operation size not specified` 的错误，请在 mov 后面加上 byte 指定大小。**
+**如果上面的代码编译时出现 `error: operation size not specified` 的错误，请在 mov 后面加上 byte 指定传送大小。**
 
 Be like:
 
