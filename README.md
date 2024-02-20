@@ -20,7 +20,7 @@
     - [检测点 3.3](ch03/README.md#检测点-33)
     - [第 3 章习题](ch03/README.md#第-3-章习题)
 
-## Licence
+## License
 
 [assembly.rip](https://github.com/CuB3y0nd/assembly.rip) © 2024 by [CuB3y0nd](https://www.cubeyond.net) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
 
