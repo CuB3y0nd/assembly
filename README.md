@@ -28,7 +28,7 @@
 
 ## pwndbg cheat sheet
 
-这份 [Cheet Sheet](misc/pwndbg-cheat-sheet.md) 记录了一些常用的 pwndbg 调试指令，方便查阅。
+这份 [Cheat Sheet](misc/pwndbg-cheat-sheet.md) 记录了一些常用的 pwndbg 调试指令，方便查阅。
 
 ## 使用 Qemu + GDB 调试汇编程序
 
