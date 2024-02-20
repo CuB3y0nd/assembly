@@ -113,10 +113,10 @@ layout <layout_type>
 
 ### layout 快捷键
 
- - `Ctrl+L` 刷新窗口
- - `Ctrl+X+1` 单窗口模式
- - `Ctrl+X+2` 双窗口模式
- - `Ctrl+X+A` 传统模式
+ - `Ctrl + L` 刷新窗口
+ - `Ctrl + X + 1` 单窗口模式
+ - `Ctrl + X + 2` 双窗口模式
+ - `Ctrl + X + A` 传统模式
 
 ## 退出
 
