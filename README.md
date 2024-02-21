@@ -49,6 +49,8 @@ target remote localhost:1234
 
 使用 `layout asm` 可以查看接下来要运行的指令，十分方便。若要切换它的显示状态可以使用 `Ctrl + X + A`。
 
+更多用法可以参考我的 [pwndbg cheat sheet](https://github.com/CuB3y0nd/assembly.rip/blob/master/misc/pwndbg-cheat-sheet.md#layout-%E5%B0%8F%E7%AA%97)。
+
 ## License
 
 [assembly.rip](https://github.com/CuB3y0nd/assembly.rip) © 2024 by [CuB3y0nd](https://www.cubeyond.net) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
