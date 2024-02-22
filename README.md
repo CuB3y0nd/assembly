@@ -25,6 +25,8 @@
 - [第 5 章](ch05/README.md)
     - [检测点 5.1](ch05/README.md#检测点-51)
     - [检测点 5.2](ch05/README.md#检测点-52)
+- [第 6 章](ch06/README.md)
+    - [检测点 6.1](ch06/README.md#检测点-61)
 
 ## pwndbg cheat sheet
 
