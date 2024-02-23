@@ -84,3 +84,17 @@ J. add ax, cl
  - $\text{执行 div bh 后，这三个寄存器的内容分别是：0x0001、0x9000、0x0001}$
  - $\text{执行 div bx 后，这三个寄存器的内容分别是：0x0001、0x9000、0x7090}$
 
+## 检测点 6.4
+
+```
+写出以下程序片段中的那两条 jmp 指令的机器指令吗，并在 Nasmide 中编译，验证你的答案是否正确：
+
+jmp near start
+data db 0x55, 0xaa
+start: mov ax, 0
+jmp 0x2000:0x0005
+```
+
+ - $\text{E9 02 00}$
+ - $\text{EA 05 00 00 20}$
+

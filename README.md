@@ -29,6 +29,7 @@
     - [检测点 6.1](ch06/README.md#检测点-61)
     - [检测点 6.2](ch06/README.md#检测点-62)
     - [检测点 6.3](ch06/README.md#检测点-63)
+    - [检测点 6.4](ch06/README.md#检测点-64)
 
 ## pwndbg cheat sheet
 
