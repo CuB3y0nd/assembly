@@ -34,6 +34,7 @@
     - [第 6 章习题](ch06/README.md#第-6-章习题)
 - [第 7 章](ch07/README.md)
     - [检测点 7.1](ch07/README.md#检测点-71)
+    - [检测点 7.2](ch07/README.md#检测点-72)
 
 ## pwndbg cheat sheet
 

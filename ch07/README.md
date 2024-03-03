@@ -8,3 +8,14 @@ A. 字节  B. 字  C. DI  D. SI  E. CX  F. rep  G. 减小  H. std  I. cld  J. �
 
  - $\text{A、B、D、C、F、E、I、H、G}$
 
+## 检测点 7.1
+
+```
+选择题：下面哪些指令是错误的，为什么？
+
+A. add ax, [bx]  B. mov ax, [si]   C. mov ax, [cx]   D. mov dx, [di]
+E. mov dx, [ax]  F. inc byte [di]  G. div word [bx]
+```
+
+ - $\text{C、E：在 8086 处理器上，如果要用寄存器来提供偏移地址，只能使用寄存器 BX、SI、DI、BP。}$
+
