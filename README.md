@@ -36,6 +36,7 @@
     - [检测点 7.1](ch07/README.md#检测点-71)
     - [检测点 7.2](ch07/README.md#检测点-72)
     - [检测点 7.3](ch07/README.md#检测点-73)
+    - [检测点 7.4](ch07/README.md#检测点-74)
 
 ## pwndbg cheat sheet
 
