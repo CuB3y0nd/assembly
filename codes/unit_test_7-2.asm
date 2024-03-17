@@ -71,7 +71,7 @@ data1over:
   xor dx, dx
 
 data2cmp:
-  mov dx, [bx+si]
+  mov dx, [bx + si]
   test dx, dx
   js data2negative
   inc ah
