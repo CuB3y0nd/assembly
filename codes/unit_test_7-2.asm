@@ -49,7 +49,7 @@ start:
 
 ; 判断 data1 中数的正负
 data1cmp:
-  mov dl, [bx+si]
+  mov dl, [bx + si]
   test dl, dl
   js data1negative
   inc ah
