@@ -10,7 +10,8 @@
 <details>
   <summary>王爽《汇编语言》（第 4 版）检测点及实验</summary>
 
-- [第 1 章]("./《汇编语言》（第 4 版）/ch01/README.md")
+- [第 1 章](/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%AC%AC%204%20%E7%89%88%EF%BC%89/ch01/README.md)
+  - [检测点 1.1](/%E3%80%8A%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%8B%EF%BC%88%E7%AC%AC%204%20%E7%89%88%EF%BC%89/ch01/README.md#检测点-11)
 
 </details>
 
