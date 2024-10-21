@@ -8,6 +8,13 @@
 ## 目录
 
 <details>
+  <summary>王爽《汇编语言》（第 4 版）检测点及实验</summary>
+
+- [第 1 章]("./《汇编语言》（第 4 版）/ch01/README.md")
+
+</details>
+
+<details>
   <summary>李忠《x86 汇编语言：从实模式到保护模式》（第二版）检测点及章节习题</summary>
 
 - [第 1 章](/%E3%80%8Ax86%20%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%EF%BC%9A%E4%BB%8E%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F%E3%80%8B%EF%BC%88%E7%AC%AC%E4%BA%8C%E7%89%88%EF%BC%89/ch01/README.md)
