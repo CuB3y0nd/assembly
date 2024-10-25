@@ -62,3 +62,73 @@ mov ax, [0002]  CS: 0ff0 IP: 010B DS: 0x2000 AX: 0xEA66 BX: 0x0000
 
 数据和程序没有区别。通过设置数据段和代码段来区分数据和指令。
 ```
+
+## 检测点 3.2
+
+```
+（1）补全下面的程序，使其可以将 10000H~1000FH 中的 8 个字，逆序复制到 20000H~2000FH 中。逆序复制的含义如图 3.17 所示（图中内存里的数据均为假设）。
+
+mov ax, 0x1000
+mov ds, ax
+________
+________
+________
+push [0]
+push [2]
+push [4]
+push [6]
+push [8]
+push [A]
+push [C]
+push [E]
+```
+
+```asm
+mov ax, 0x1000
+mov ds, ax
+mov ax, 0x2000
+mov ss, ax
+mov sp, 0x0010
+push [0]
+push [2]
+push [4]
+push [6]
+push [8]
+push [A]
+push [C]
+push [E]
+```
+
+```
+（2）补全下面的程序，使其可以将 10000H~1000FH 中的 8 个字，逆序复制到 20000H~2000FH 中。
+
+mov ax, 0x2000
+mov ds, ax
+________
+________
+________
+pop [E]
+pop [C]
+pop [A]
+pop [8]
+pop [6]
+pop [4]
+pop [2]
+pop [0]
+```
+
+```asm
+mov ax, 0x2000
+mov ds, ax
+mov ax, 0x1000
+mov ss, ax
+mov sp, 0x0000
+pop [E]
+pop [C]
+pop [A]
+pop [8]
+pop [6]
+pop [4]
+pop [2]
+pop [0]
+```
