@@ -91,3 +91,7 @@ start: mov ax, cs
 codesg ends
 end start
 ```
+
+## 实验 5：编写、调试具有多个段的程序
+
+略
