@@ -5,19 +5,19 @@
 
 assume cs:codesg
 codesg segment
-  dw 0x0123, 0x0456, 0x0789, 0x0abc, 0x0def, 0x0fed, 0x0cba, 0x0987
-start: mov ax, 0x0
+  dw 0123h, 0456h, 0789h, 0abch, 0defh, 0fedh, 0cbah, 0987h
+start: mov ax, 0h
        mov ds, ax
-       mov bx, 0x0
+       mov bx, 0h
 
-       mov cx, 0x8
+       mov cx, 8h
     s: mov ax, [bx]
        ________
-       add bx, 0x2
+       add bx, 2h
        loop s
 
-       mov ax, 0x4c00
-       int 0x21
+       mov ax, 4c00h
+       int 21h
 codesg ends
 end start
 ```
@@ -25,19 +25,19 @@ end start
 ```asm
 assume cs:codesg
 codesg segment
-  dw 0x0123, 0x0456, 0x0789, 0x0abc, 0x0def, 0x0fed, 0x0cba, 0x0987
-start: mov ax, 0x0
+  dw 0123h, 0456h, 0789h, 0abch, 0defh, 0fedh, 0cbah, 0987h
+start: mov ax, 0h
        mov ds, ax
-       mov bx, 0x0
+       mov bx, 0h
 
-       mov cx, 0x8
+       mov cx, 8h
     s: mov ax, [bx]
        mov cs:[bx], ax
-       add bx, 0x2
+       add bx, 2h
        loop s
 
-       mov ax, 0x4c00
-       int 0x21
+       mov ax, 4c00h
+       int 21h
 codesg ends
 end start
 ```
@@ -47,23 +47,23 @@ end start
 
 assume cs:codesg
 codesg segment
-  dw 0x0123, 0x0456, 0x0789, 0x0abc, 0x0def, 0x0fed, 0x0cba, 0x0987
-  dw 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+  dw 0123h, 0456h, 0789h, 0abch, 0defh, 0fedh, 0cbah, 0987h
+  dw 0h, 0h, 0h, 0h, 0h, 0h, 0h, 0h, 0h, 0h
 start: mov ax, ____
        mov ss, ax
        mov sp, ____
 
-       mov ax, 0x0
+       mov ax, 0h
        mov ds, ax
-       mov bx, 0x0
-       mov cx, 0x8
+       mov bx, 0h
+       mov cx, 8h
     s: push [bx]
        ________
-       add bx, 0x2
+       add bx, 2h
        loop s
 
-       mov ax, 0x4c00
-       int 0x21
+       mov ax, 4c00h
+       int 21h
 codesg ends
 end start
 ```
@@ -71,23 +71,23 @@ end start
 ```asm
 assume cs:codesg
 codesg segment
-  dw 0x0123, 0x0456, 0x0789, 0x0abc, 0x0def, 0x0fed, 0x0cba, 0x0987
-  dw 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+  dw 0123h, 0456h, 0789h, 0abch, 0defh, 0fedh, 0cbah, 0987h
+  dw 0h, 0h, 0h, 0h, 0h, 0h, 0h, 0h, 0h, 0h
 start: mov ax, cs
        mov ss, ax
-       mov sp, 0x24
+       mov sp, 24h
 
-       mov ax, 0x0
+       mov ax, 0h
        mov ds, ax
-       mov bx, 0x0
-       mov cx, 0x8
+       mov bx, 0h
+       mov cx, 8h
     s: push [bx]
        pop cs:[bx]
-       add bx, 0x2
+       add bx, 2h
        loop s
 
-       mov ax, 0x4c00
-       int 0x21
+       mov ax, 4c00h
+       int 21h
 codesg ends
 end start
 ```
