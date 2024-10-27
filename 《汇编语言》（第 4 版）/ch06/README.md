@@ -82,8 +82,8 @@ start: mov ax, cs
        mov bx, 0x0
        mov cx, 0x8
     s: push [bx]
-       add ax, 0x2
        pop cs:[bx]
+       add bx, 0x2
        loop s
 
        mov ax, 0x4c00
