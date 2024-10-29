@@ -63,6 +63,9 @@ code segment
                 add bp, 10h
 
                 loop create_table
+
+                mov ax, 4c00h
+                int 21h
 code ends
 
 end start
