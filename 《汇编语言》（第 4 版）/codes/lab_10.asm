@@ -1,7 +1,7 @@
 assume ds:data, cs:code
 
 code segment
-         start: ; TOOD
+         start: ; TODO
       show_str: mov ax, 0b800h
                 mov es, ax
 
@@ -20,7 +20,7 @@ code segment
                 add di, ax
 
                 mov ch, 0h
-         print: mov cl, ds:[si]
+    print_char: mov cl, ds:[si]
                 jcxz show_str_ret
                 mov es:[di], cl
                 mov bp, sp
@@ -28,11 +28,11 @@ code segment
                 mov byte ptr es:[di + 1h], al
                 inc si
                 add di, 2h
-                jmp short print
+                jmp short print_char
   show_str_ret: ret
                 pop cx
-         divdw:
-          dtoc:
+         divdw: ; TODO
+          dtoc: ; TODO
 code ends
 
 end start
