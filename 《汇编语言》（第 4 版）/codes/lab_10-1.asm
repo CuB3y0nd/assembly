@@ -33,6 +33,7 @@ code segment
 
               push dx
               push cx
+              push si
 
               mov ax, 0b800h
               mov es, ax
@@ -51,14 +52,17 @@ code segment
 
               mov ch, 0h
   print_char: mov cl, ds:[si]
-              jcxz return
+              jcxz print_ret
               mov es:[di], cl
               mov cl, [bp - 4h]
               mov es:[di + 1h], cl
               inc si
               add di, 2h
               jmp short print_char
-      return: mov sp, bp
+   print_ret: pop si
+              pop cx
+              pop dx
+              mov sp, bp
               pop bp
               ret
 code ends
