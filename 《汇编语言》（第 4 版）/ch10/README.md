@@ -154,6 +154,7 @@ end start
 
 - [实验 10.1](../codes/lab_10-1.asm)
 - [实验 10.2](../codes/lab_10-2.asm)
+- [实验 10.3](../codes/lab_10-3.asm)
 
 > [!NOTE]
 > 实验 10.1 的代码中我把书中给定的的子程序名 `show_str` 改为了 `print`，注意区分。

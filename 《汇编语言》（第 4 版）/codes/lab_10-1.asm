@@ -25,6 +25,7 @@ code segment
               ;   DH: Row address. Range: [0 ~ 24]
               ;   DL: Column address. Range: [0 ~ 79]
               ;   CL: Style of the ASCII code.
+              ;   DS:SI: Start address of the string.
               ;
               ; Return value: None
        print: push bp
