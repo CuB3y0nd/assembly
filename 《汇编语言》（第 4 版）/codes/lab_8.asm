@@ -21,51 +21,53 @@ table segment
 table ends
 
 code segment
-  start:        mov ax, stack
-                mov ss, ax
-                mov sp, 10h
+  start:
+    mov ax, stack
+    mov ss, ax
+    mov sp, 10h
 
-                mov ax, data
-                mov ds, ax
+    mov ax, data
+    mov ds, ax
 
-                mov ax, table
-                mov es, ax
+    mov ax, table
+    mov es, ax
 
-                mov si, 0h
-                mov di, 54h
-                mov bx, 0a8h
-                mov bp, 0h
+    mov si, 0h
+    mov di, 54h
+    mov bx, 0a8h
+    mov bp, 0h
 
-                mov cx, 15h
-  create_table: ; year
-                push ds:[si]
-                pop es:[bp]
-                push ds:[si + 2h]
-                pop es:[bp + 2h]
+    mov cx, 15h
+  create_table:
+    ; year
+    push ds:[si]
+    pop es:[bp]
+    push ds:[si + 2h]
+    pop es:[bp + 2h]
 
-                ; income
-                mov ax, ds:[di]
-                mov dx, ds:[di + 2h]
-                mov es:[bp + 5h], ax
-                mov es:[bp + 7h], dx
+    ; income
+    mov ax, ds:[di]
+    mov dx, ds:[di + 2h]
+    mov es:[bp + 5h], ax
+    mov es:[bp + 7h], dx
 
-                ; employees
-                push ds:[bx]
-                pop es:[bp + 0ah]
+    ; employees
+    push ds:[bx]
+    pop es:[bp + 0ah]
 
-                ; avg_income
-                div word ptr ds:[bx]
-                mov es:[bp + 0dh], ax
+    ; avg_income
+    div word ptr ds:[bx]
+    mov es:[bp + 0dh], ax
 
-                add si, 4h
-                add di, 4h
-                add bx, 2h
-                add bp, 10h
+    add si, 4h
+    add di, 4h
+    add bx, 2h
+    add bp, 10h
 
-                loop create_table
+    loop create_table
 
-                mov ax, 4c00h
-                int 21h
+    mov ax, 4c00h
+    int 21h
 code ends
 
 end start
