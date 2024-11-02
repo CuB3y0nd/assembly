@@ -158,3 +158,7 @@ end start
 
 > [!NOTE]
 > 实验 10.1 的代码中我把书中给定的的子程序名 `show_str` 改为了 `print`，注意区分。
+
+## 课程设计 1
+
+[源码](../codes/project_1.asm)
