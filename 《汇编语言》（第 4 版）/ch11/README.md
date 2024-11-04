@@ -143,3 +143,44 @@ and ah, 00001000B
 ```
 
 - AX: `0x45`
+
+## 实验 11：编写子程序
+
+```
+编写一个子程序，将包含任意字符，以 0 结尾的字符串中的小写字母转变为大写字母，描述如下。
+
+名称：letterc
+功能：将以 0 结尾的字符串中的小写字母转换为大写字母
+参数：DS:SI 指向字符串的首地址
+
+应用举例：
+
+assume cs:code
+
+data segment
+  db "Beginner's All-purpose Symbolic Instruction Code.", 0
+data ends
+
+code segment
+  begin:
+    mov ax, data
+    mov ds, ax
+    mov si, 0
+    call letterc
+
+    mov ax, 4c00h
+    int 21h
+
+  letterc:
+    ...
+code ends
+
+end begin
+
+注意需要进行转化的是字符串中的小写字母 a~z，而不是其它字符。
+```
+
+> [!NOTE]
+> 实验 11 中我把给定的子程序名 `letterc` 改为了 `to_upper_case`。注意区分。
+
+[源码](../codes/lab_11.asm)
