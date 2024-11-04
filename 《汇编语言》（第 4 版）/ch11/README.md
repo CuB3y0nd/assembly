@@ -125,3 +125,21 @@ s0: inc bx
 s0: inc bx
     loop s
 ```
+
+## 检测点 11.4
+
+```
+下面的程序执行后 AX=?
+
+mov ax, 0
+push ax
+popf
+mov ax, 0fff0h
+add ax, 0010h
+pushf
+pop ax
+and al, 11000101B
+and ah, 00001000B
+```
+
+- AX: `0x45`
