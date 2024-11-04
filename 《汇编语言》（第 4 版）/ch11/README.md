@@ -51,3 +51,77 @@ add al, 05h     1     0     0     0     0
 mov al, 7dh     1     0     0     0     0
 add al, 0bh     0     1     1     0     1
 ```
+
+## 检测点 11.3
+
+```
+（1）补全下面的程序，统计 F000:0 处 32 个字节中，大小在 [32, 128] 的数据的个数。
+
+    mov ax, 0f000h
+    mov ds, ax
+
+    mov bx, 0
+    mov dx, 0
+    mov cx, 32
+ s: mov al, [bx]
+    cmp al, 32
+    ________
+    cmp al, 128
+    ________
+    inc dx
+s0: inc bx
+    loop s
+```
+
+```asm
+    mov ax, 0f000h
+    mov ds, ax
+
+    mov bx, 0
+    mov dx, 0
+    mov cx, 32
+ s: mov al, [bx]
+    cmp al, 32
+    jb s0
+    cmp al, 128
+    ja s0
+    inc dx
+s0: inc bx
+    loop s
+```
+
+```
+（2）补全下面的程序，统计 F000:0 处 32 个字节中，大小在 (32, 128) 的数据的个数。
+
+    mov ax, 0f000h
+    mov ds, ax
+
+    mov dx, 0
+    mov dx, 0
+    mov cx, 32
+ s: mov al, [bx]
+    cmp al, 32
+    ________
+    cmp al, 128
+    ________
+    inc dx
+s0: inc bx
+    loop s
+```
+
+```asm
+    mov ax, 0f000h
+    mov ds, ax
+
+    mov bx, 0
+    mov dx, 0
+    mov cx, 32
+ s: mov al, [bx]
+    cmp al, 32
+    jna s0
+    cmp al, 128
+    jnb s0
+    inc dx
+s0: inc bx
+    loop s
+```
