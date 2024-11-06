@@ -92,3 +92,35 @@ end start
 ```
 
 [源码](../codes/lab_13-1.asm)
+
+```
+（2）编写并安装 int 7ch 中断例程，功能为完成 loop 指令的功能。
+
+参数：(cx) = 循环次数，(bx) = 位移。
+
+以上中断例程安装成功后，对下面的程序进行单步跟踪，尤其注意观察 int、iret 指令执行前后 CS、IP 和栈中的状态。
+
+在屏幕中间显示 80 个 "!"。
+
+assume cs:code
+
+code segment
+  start:
+    mov ax, 0b800h
+    mov es, ax
+    mov di, 160*12
+    mov bx, offset s - offset se
+    mov cx, 80
+  s:
+    mov byte ptr es:[di], '!'
+    add di, 2
+    int 7ch
+  se:
+    nop
+
+    mov ax, 4c00h
+    int 21h
+code ends
+```
+
+[源码](../codes/lab_13-2.asm)
