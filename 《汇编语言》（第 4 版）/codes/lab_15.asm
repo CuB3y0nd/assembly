@@ -72,6 +72,14 @@ code segment
       pop bp
       ret
 
+    ;; Function:
+    ;;   - Name: int_9_handler
+    ;;   - Description: A custom int 9 handler for customize <A> key's
+    ;;                  behaviour.
+    ;;
+    ;; Arguments: None
+    ;;
+    ;; Return value: None
     int_9_handler:
       push bp
       mov bp, sp
