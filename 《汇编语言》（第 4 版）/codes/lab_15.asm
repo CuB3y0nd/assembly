@@ -24,6 +24,7 @@ code segment
     mov es:[4h * 9h + 2h], cs
     sti
 
+    ; give a spare interval to detect user input
     call delay
 
     ; restore the default int 9 handler
